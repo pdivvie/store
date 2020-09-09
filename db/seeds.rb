@@ -8,16 +8,16 @@
 
 User.create!( email: 'admin@example.com',
               password: 'password',
-              password_confirmation: 'password'
+              password_confirmation: 'password',
               admin: true
             )
 
 25.times do |i|
   Product.create!(
     name: "Pizza",
-    description: "The best pizza you ever had maybe"
-    price: 11.99
-    catering_item: true
+    description: "The best pizza you ever had maybe",
+    price: 11.99,
+    catering: true
   )
 
 end
